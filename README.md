@@ -8,4 +8,4 @@ Splunk searching,
 Using fields,
 Custom reports,
 Custom alerts.
-The docx document contains step by step tasks and screenshots. The 'Splunk Screenshots' contains all the photos in one location. 
+The docx document contains step by step tasks and screenshots. The 'Splunk Screenshots' contains all the screenshots in one location. 
