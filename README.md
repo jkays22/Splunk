@@ -1,12 +1,12 @@
-Splunk
-Vandalay Industries Monitoring 
+# Splunk
+# Vandalay Industries Monitoring 
 
-Step 1: The Need for Speed
+# Step 1: The Need for Speed
 
 Background: As the worldwide leader of importing and exporting, Vandalay Industries has been the target of many adversaries attempting to disrupt their online business. Recently, Vandaly has been experiencing DDOS attacks against their web servers.
 Not only were web servers taken offline by a DDOS attack, but upload and download speed were also significantly impacted after the outage. Your networking team provided results of a network speed run around the time of the latest DDOS attack.
 
-Task: Create a report to determine the impact that the DDOS attack had on download and upload speed. Additionally, create an additional field to calculate the ratio of the upload speed to the download speed.
+# Task: Create a report to determine the impact that the DDOS attack had on download and upload speed. Additionally, create an additional field to calculate the ratio of the upload speed to the download speed.
 
 Uploading ‘Speed Test’ file then using the eval command to create a field called ratio that shows the ratio between the upload and download speeds. Formatting the ratio is: | eval new_field_name = 'fieldA' / 'fieldB'
 
@@ -17,14 +17,11 @@ Uploading ‘Speed Test’ file then using the eval command to create a field ca
 Next I will create a report using the Splunk's table command to display the following fields in a statistics report. I’ll use the following format for the table command: | table fieldA, fieldB, fieldC
 
 _time
-
 IP_ADDRESS
-
 DOWNLOAD_MEGABITS
-
 UPLOAD_MEGABITS
-
 ratio
+
 ![ST_table](https://user-images.githubusercontent.com/88590862/140990873-996588f5-8eff-4a89-a579-096d0b5cfda8.PNG)
 ![event_clue](https://user-images.githubusercontent.com/88590862/140990892-4a8b563a-5279-4610-b924-ea1dfbc5de41.PNG)
 ![visualized_clue](https://user-images.githubusercontent.com/88590862/140990901-228ded0b-50d5-4236-bc0b-90ce454848b8.PNG)
@@ -32,11 +29,11 @@ ratio
 
 Based on the report created and other tools in Splunk, we find the approximate date and time of the attack occurred on 02/23/2020 at 2:30pm and lasted until 02/23/2020 at 11:30pm. The systems took about 9 hours to recover.
 
-Step 2: Are We Vulnerable?
+# Step 2: Are We Vulnerable?
 
 Background: Due to the frequency of attacks, your manager needs to be sure that sensitive customer data on their servers is not vulnerable. Since Vandalay uses Nessus vulnerability scanners, you have pulled the last 24 hours of scans to see if there are any critical vulnerabilities.
 
-Task: Create a report determining how many critical vulnerabilities exist on the customer data server. Then, build an alert to notify your team if a critical vulnerability reappears on this server.
+# Task: Create a report determining how many critical vulnerabilities exist on the customer data server. Then, build an alert to notify your team if a critical vulnerability reappears on this server.
 
 I have uploaded our Nessus file and determined  how many critical vulnerabilities exist on the customer data server using the below information:
 
@@ -59,11 +56,11 @@ I’ve also created a scheduled email sending the critical vulnerability report 
 
 
 
-Step 3: Drawing the (base)line
+# Step 3: Drawing the (base)line
 
 Background: A Vandaly server is also experiencing brute force attacks into their administrator account. Management would like you to set up monitoring to notify the SOC team if a brute force attack occurs again.
 
-Task: Analyze administrator logs that document a brute force attack. Then, create a baseline of the ordinary amount of administrator bad logins and determine a threshold to indicate if a brute force attack is occurring.
+# Task: Analyze administrator logs that document a brute force attack. Then, create a baseline of the ordinary amount of administrator bad logins and determine a threshold to indicate if a brute force attack is occurring.
 
 I have uploaded the admin logs and found out when the brute force attack occurred using the below information to make the event easier to identify.
 
