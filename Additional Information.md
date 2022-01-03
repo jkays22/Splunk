@@ -1,4 +1,4 @@
-About the Project:
+# About the Project:
 
 I utilize my Splunk skills to design a powerful monitoring solution to protect Vandaly from security attacks.
 Topics covered include:
