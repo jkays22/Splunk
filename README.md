@@ -51,6 +51,7 @@ I then built an alert that monitors every day to see if this server has any crit
 
 
 I’ve also created a scheduled email sending the critical vulnerability report every week for additional monitoring and information:
+
 ![scheduled_report](https://user-images.githubusercontent.com/88590862/140991290-e10dc41b-d4bd-47c4-b2b6-81f35b742172.PNG)
 ![scheduled_report2](https://user-images.githubusercontent.com/88590862/140991292-a58f1617-a82a-466a-af3e-6f96496378c6.PNG)
 
